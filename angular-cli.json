@@ -1,6 +1,6 @@
 {
   "project": {
-    "version": "1.0.0-beta.28.3",
+    "version": "1.0.1-beta.28.3",
     "name": "cli"
   },
   "apps": [
@@ -18,9 +18,10 @@
       "tsconfig": "tsconfig.json",
       "prefix": "app",
       "styles": [
+        "../node_modules/materialize-css/dist/css/materialize.css",
         "styles.css"
       ],
-      "scripts": [],
+      "scripts": ["../node_modules/materialize-css/node_modules/jquery/dist/jquery.min.js","../node_modules/materialize-css/dist/js/materialize.js","main.js"],
       "environments": {
         "source": "environments/environment.ts",
         "dev": "environments/environment.ts",
